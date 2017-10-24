@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="../styles/style.css" rel="stylesheet" type="text/css">
+	<title>Contact | Lyejoe Portfolio</title>
+</head>
+<body>
+	<header>
+		<div class="mobmenu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+		<div class="container">
+		<div class="lyelogo"><a href="index.html">
+			<i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i></a></div>
+			<div class="search"><input class="inputclasses"  id="search" name="seach" type="text" style ="border-radius: 8px"; style="border: 4px;"><i class="fa fa-search" aria-hidden="true"></i></div>
+			<h2>Lyejoe Portfolio</h2>
+		</div>
+	</header>
+	<nav>
+		<div class="container">
+			<ul class="navuldropdown">
+				<li class="navlicontent">
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="navlicontent">
+					<a href="../about/index.html">About</a>
+				</li>
+				<li class="navlicontent">
+					<a href="../projects/index.html">Projects</a>
+				</li>
+				<li class="navlicontent">
+					<a href="index.html" class="selected">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div class="container">
+			<h1>Lyejoe Contact</h1>
+			<p>This is an official portfolio project file from Yoseph E.L I am so happy coding and showing my project. Thanks for your visit my page. :)</p>
+			<h2>Contact us on slack Leyjoe</h2><iframe allowfullscreen frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16746.043361992317!2d8.542859818046084!3d47.38310175709427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2zWsO8cmljaA!5e0!3m2!1sen!2sch!4v1506946904401" style="border:0" width="50%"></iframe>
+		</div>
+	</main>
+	<footer>
+	<script>
+		var navuldropdown = document.getElementsByClassName("navuldropdown")[0];
+		var mobmenu = document.getElementsByClassName("mobmenu")[0];
+		mobmenu.addEventListener('click', function(){
+			if(navuldropdown.classList.contains("displayNav") == false){
+			   navuldropdown.classList.add("displayNav");
+			   }else {
+			 navuldropdown.classList.remove("displayNav");
+			}
+		})
+	</script>
+		<div class="container">
+			&copy; 2017 lyejoe.ch | <a href="#">Facebook</a> | <a href="#">Slack</a>
+		</div>
+	</footer>
+</body>
+</html>

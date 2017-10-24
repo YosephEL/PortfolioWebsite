@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button><p id="sqrtResult"></p>
+  <br><br>
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button>
+  <br><br>
+  <div id="solution"></div>
+  <script>
+	
+var squareInpute = document.querySelector("#square-input");
+var squareButton = document.getElementById("square-button");
+var sqrtResult = document.getElementById("sqrtResult");
+	  
+var hafInuput = document.querySelector("#half-input");
+var percent1Input = document.querySelector("#percent1-input");
+var percent2Input = document.querySelector("#percent2-input");
+var areaInput = document.querySelector("#area-input");
+
+var onClickSqurt = function() {
+	sqrtResult.innerHTML = Math.sqrt(parseInt(squareInpute.value));
+}
+squareButton.addEventListener('click',onClickSqurt);
+
+
+
+	</script>
+</body>
+</html>
