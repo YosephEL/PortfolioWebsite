@@ -1,112 +1,151 @@
 <html>
-	<head>
-		<title>Froyo Machine!</title>
-		<style>
-			#machine {
-				float:left;
-				width:40%;
-				border:3px outset gray;
-			}
-			div#power > img {
-				float:left;
-			}
-			.btn {
-				float:left;
-				clear:right;
-			}
-		</style>
-	</head>
-	<body>
-		<h1>Froyo-maker 2000e</h1>
-		<div id="machine">
-			<div id="power">
-				<img src="img/power.png" class="power">
-			</div>
-			<button id="vanilla" class="btn">Vanilla</button><br>
-			<button id="chocolate" class="btn">Chocolate</button><br>
-			<button id="swirl" class="btn">Swirl</button><br>
+
+<head>
+	<title>Froyo Machine!</title>
+	<style>
+		#machine {
+			float: left;
+			width: 40%;
+			border: 3px outset gray;
+		}
+
+		div#power>img {
+			float: left;
+		}
+		div#conveyor_belt>img {
+			width: 100px;
+			width: 100px;
+		}
+		.btn {
+			float: left;
+			clear: right;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Froyo-maker 2000e</h1>
+	<div id="machine">
+		<div id="power">
+			<img src="img/power.png" class="power">
 		</div>
-		<div id="conveyor_belt" style="float:left">
-			<img src="img/conveyor.png">
-		</div>
-		<script>
-		
+		<button id="vanilla" class="btn">Vanilla</button><br>
+		<button id="chocolate" class="btn">Chocolate</button><br>
+		<button id="swirl" class="btn">Swirl</button><br>
+	</div>
+	<div id="conveyor_belt" style="float:left">
+		<img src="img/conveyor.png">
+	</div>
+	<script>
+		var isOn = false;
 
-			var isOn = false;
+		var powerButton = document.getElementById('power');
+		var conveyor_belt = document.getElementById("conveyor_belt");
 
-			var powerButton = document.getElementById('power');
-			var powerImage = powerButton.getElementsByTagName('img')[0];
-			var conveyor_belt = document.getElementById("conveyor_belt");
+		powerButton.addEventListener('click', powerButtonClicked);
 
-			powerButton.addEventListener('click', powerButtonClicked);
-			
 
-			function powerButtonClicked(event){
+		var chocolateImg = document.createElement("img");
+		chocolateImg.src = "img/chocolate.jpg";
+
+		var swirlImg = document.createElement("img");
+		swirlImg.src = "img/swirl.jpg";
+
+
+		function powerButtonClicked(event) {
+			// an other code 
+			// event.target.src = 'img/power_on.phg';
+
+
+
+			if (isOn) {
+				// machine is on. turn it off.
+
+				event.target.src = "img/power.png";
+
+				//remove event listeners
 				var vanillaButton = document.getElementById('vanilla');
+				vanillaButton.removeEventListener('click', flavourMaker);
+
 				var chocolateButton = document.getElementById('chocolate');
+				chocolateButton.removeEventListener('click', flavourMaker);
+
 				var swirlButton = document.getElementById('swirl');
+				swirlButton.removeEventListener('click', flavourMaker);
 
-		
-				if(isOn) { 
-					// machine is on. turn it off.
-					
-					powerImage.src = "img/power.png";
-					
-					// remove event listeners
-					vanillaButton.removeEventListener('click', vanillaMaker);
-					
-					chocolateButton.removeEventListener('click', chocolateMaker);
-					
-					swirlButton.removeEventListener('click', swirlMaker);
-					
-					isOn = false;
-					
-				}else{ 
-					// machine is off. turn it on
-					powerImage.src = "img/power_on.png";
-				
-					// Bind your events here - find the buttons and then add events to them, using functions you create below
-				
-				vanillaButton.addEventListener('click', vanillaMaker);
-					
-				chocolateButton.addEventListener('click', chocolateMaker);
-				
-				swirlButton.addEventListener('click', swirlMaker);
-				
-					isOn = true;
+				isOn = false;
+
+			} else {
+				// machine is off. turn it on
+				event.target.src = "img/power_on.png";
+
+				// Bind your events here - find the buttons and then add events to them, using functions you create below
+				var vanillaButton = document.getElementById('vanilla');
+				vanillaButton.addEventListener('click', flavourMaker);
+
+				var chocolateButton = document.getElementById('chocolate');
+				chocolateButton.addEventListener('click', flavourMaker);
+
+				var swirlButton = document.getElementById('swirl');
+				swirlButton.addEventListener('click', flavourMaker);
+
+
+				//vanillaButton.addEventListener('click', flavourMaker);
+				isOn = true;
+			}
+
+
+			// Make sure your machine can be turned off by unbinding event listeners when you turn it off! (make sure to replace the image as well- power.png is the "off" position.)
+		}
+		/*
+				function vanillaMaker() {
+					// create an img tag
+					var vanillaImg = document.createElement("img");
+					// set it's src attribute to be img/vanilla.jpg
+					vanillaImg.src = "img/vanilla.jpg";
+					// append it to the conveyor belt
+					conveyor_belt.appendChild(vanillaImg);
+					// create several more functions for each flavor!
+					// BONUS: Clean up your code so that one function can create any flavor, depending on the button being pressed 
+					// HINT: You can look at the ID of the button with event.target, which has the flavor of the button.
 				}
-				
-				
-				// Make sure your machine can be turned off by unbinding event listeners when you turn it off! (make sure to replace the image as well- power.png is the "off" position.)
-			}
-			
-			function vanillaMaker(){
-				// create an img tag
-				var vanillaImg = document.createElement("img");
-				// set it's src attribute to be img/vanilla.jpg
-				vanillaImg.src = "img/vanilla.jpg";
-				// append it to the conveyor belt
-				conveyor_belt.appendChild(vanillaImg);
-				// create several more functions for each flavor!
-				// BONUS: Clean up your code so that one function can create any flavor, depending on the button being pressed 
-				// HINT: You can look at the ID of the button with event.target, which has the flavor of the button.
-			}
-			function chocolateMaker(){
-				// create an img tag
-				var chocolateImg = document.createElement("img");
-				chocolateImg.src = "img/chocolate.jpg";
-				conveyor_belt.appendChild(chocolateImg);
-				
-			}
-		
-			function swirlMaker(){
-				var swirlImg = document.createElement("img");
-				swirlImg.src = "img/swirl.jpg";
-				conveyor_belt.appendChild(swirlImg);
-				
-				
-			}
-		</script>
-	</body>
-</html>
 
+				function chocolateMaker() {
+					// create an img tag
+					var chocolateImg = document.createElement("img");
+					chocolateImg.src = "img/chocolate.jpg";
+					conveyor_belt.appendChild(chocolateImg);
+				}
+
+				function swirlMaker() {
+					var swirlImg = document.createElement("img");
+					swirlImg.src = "img/swirl.jpg";
+					conveyor_belt.appendChild(swirlImg);
+				}
+		*/
+		function flavourMaker(event) {
+			//console.log(event.target);
+			var buttonClicked = event.target;
+			
+
+			var selectedFlavour = buttonClicked.getAttribute('id');
+			var flavourDesc = " Selected :" + selectedFlavour;
+			var img = document.createElement('img');
+			img.setAttribute ('title',flavourDesc);
+			if (selectedFlavour == "vanilla") {
+				img.src = "img/vanilla.jpg";
+			} else if (selectedFlavour == "chocolate") {
+				img.src = "img/chocolate.jpg";
+			} else if (selectedFlavour == "swirl") {
+				img.src = "img/swirl.jpg";
+			} else {
+
+			}
+			var conveyor_belt = document.getElementById("conveyor_belt").appendChild(img);
+			//conveyor_belt.appendChild(img);
+
+		}
+	</script>
+</body>
+
+</html>
