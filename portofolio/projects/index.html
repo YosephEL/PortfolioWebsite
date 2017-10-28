@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -7,22 +8,23 @@
 
 	<title>Project | Lyejoe Portfolio</title>
 </head>
+
 <body>
 	<header>
-		<div class="mobmenu">
-			<i aria-hidden="true" class="fa fa-bars"></i>
-		</div>
+
 		<div class="container">
 			<div class="lyelogo">
 				<a href="index.html"><i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i></a>
-			</div><div class="search"><input class="inputclasses"  id="search" name="seach" type="text" style ="border-radius: 8px"; style="border: 4px;"><i class="fa fa-search" aria-hidden="true"></i></div>
+			</div>
+			<div class="search"><input class="inputclasses" id="search" name="seach" type="text" style="border-radius: 8px" ; style="border: 4px;"><i class="fa fa-search" aria-hidden="true"></i></div>
 			<h2>Lyejoe Portfolio</h2>
 		</div>
-		
+		<div class="mobmenu">
+			<a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a> </div>
 	</header>
 	<nav>
 		<div class="container">
-			<ul class="navuldropdown" >
+			<ul class="navuldropdown">
 				<li class="navlicontent">
 					<a href="../index.html">Home</a>
 				</li>
@@ -41,51 +43,59 @@
 	<main>
 		<div class="container">
 			<h1>Lyejoe Projects</h1>
-		
+
 			<hr class="topline1">
 			<div class="prtcl-row">
-    			<div class="col s12 space"> Project First </div>
-    			<div class="col s12 "> Project Second  </div>
-    			<div class="col "> Project Third </div>
-    			<div class="col s12 s"> Project Fourth </div>
+				<div class="col s12 space"> Project First </div>
+				<div class="col s12 "> Project Second </div>
+				<div class="col "> Project Third </div>
+				<div class="col s12 s"> Project Fourth </div>
 			</div>
-			
+
 			<hr class="topline1">
 
 			<div class="boxcontainer">
-	<div class="box">
-		<div class="bild"><img alt="" src="../images/portfolio.jpg"></div><!-- end bild -->
-		<h3>First Project </h3>
-		<p>This is my first web project at powercoders</p>
-	</div><!-- end box -->
-	<div class="box">
-		<div class="bild"><img alt="" src="../images/portfolio.jpg"></div><!-- end bild -->
-		<h3>Second project</h3>
-		<p>This is My second project at..</p>
-	</div><!-- end box -->
-	<div class="box">
-		<div class="bild"><img alt="" src="../images/portfolio.jpg"></div><!-- end bild -->
-		<h3>Third Project</h3>
-		<p>This is my third project at...</p>
-	</div><!-- end box -->
-		</div>
+				<div class="box">
+					<div class="bild"><img alt="" src="../images/portfolio.jpg"></div>
+					<!-- end bild -->
+					<h3>First Project </h3>
+					<p>This is my first web project at powercoders</p>
+				</div>
+				<!-- end box -->
+				<div class="box">
+					<div class="bild"><img alt="" src="../images/portfolio.jpg"></div>
+					<!-- end bild -->
+					<h3>Second project</h3>
+					<p>This is My second project at..</p>
+				</div>
+				<!-- end box -->
+				<div class="box">
+					<div class="bild"><img alt="" src="../images/portfolio.jpg"></div>
+					<!-- end bild -->
+					<h3>Third Project</h3>
+					<p>This is my third project at...</p>
+				</div>
+				<!-- end box -->
+			</div>
 		</div>
 	</main>
 	<footer>
 		<script>
-		      var navuldropdown = document.getElementsByClassName("navuldropdown")[0];
-		      var mobmenu = document.getElementsByClassName("mobmenu")[0];
-		      mobmenu.addEventListener('click', function(){
-		          if(navuldropdown.classList.contains("displayNav") == false){
-		             navuldropdown.classList.add("displayNav");
-		             }else {
-		           navuldropdown.classList.remove("displayNav");
-		          }
-		      })
+			var navuldropdown = document.getElementsByClassName("navuldropdown")[0];
+			var mobmenu = document.getElementsByClassName("mobmenu")[0];
+			mobmenu.addEventListener('click', function() {
+				if (navuldropdown.classList.contains("displayNav") == false) {
+					navuldropdown.classList.add("displayNav");
+				} else {
+					navuldropdown.classList.remove("displayNav");
+				}
+			})
+
 		</script>
 		<div class="container">
 			&copy; 2017 lyejoe.ch | <a href="#">Facebook</a> | <a href="#">Slack</a>
 		</div>
 	</footer>
 </body>
+
 </html>

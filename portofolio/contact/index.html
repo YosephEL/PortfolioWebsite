@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="../styles/style.css" rel="stylesheet" type="text/css">
 	<title>Contact | Lyejoe Portfolio</title>
 </head>
+
 <body>
 	<header>
-		<div class="mobmenu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
 		<div class="container">
-		<div class="lyelogo"><a href="index.html">
+			<div class="lyelogo"><a href="index.html">
 			<i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i></a></div>
-			<div class="search"><input class="inputclasses"  id="search" name="seach" type="text" style ="border-radius: 8px"; style="border: 4px;"><i class="fa fa-search" aria-hidden="true"></i></div>
+			<div class="search"><input class="inputclasses" id="search" name="seach" type="text" style="border-radius: 8px" ; style="border: 4px;"><i class="fa fa-search" aria-hidden="true"></i></div>
 			<h2>Lyejoe Portfolio</h2>
 		</div>
+		<div class="mobmenu"><a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></div>
+
 	</header>
 	<nav>
 		<div class="container">
@@ -42,20 +45,22 @@
 		</div>
 	</main>
 	<footer>
-	<script>
-		var navuldropdown = document.getElementsByClassName("navuldropdown")[0];
-		var mobmenu = document.getElementsByClassName("mobmenu")[0];
-		mobmenu.addEventListener('click', function(){
-			if(navuldropdown.classList.contains("displayNav") == false){
-			   navuldropdown.classList.add("displayNav");
-			   }else {
-			 navuldropdown.classList.remove("displayNav");
-			}
-		})
-	</script>
+		<script>
+			var navuldropdown = document.getElementsByClassName("navuldropdown")[0];
+			var mobmenu = document.getElementsByClassName("mobmenu")[0];
+			mobmenu.addEventListener('click', function() {
+				if (navuldropdown.classList.contains("displayNav") == false) {
+					navuldropdown.classList.add("displayNav");
+				} else {
+					navuldropdown.classList.remove("displayNav");
+				}
+			})
+
+		</script>
 		<div class="container">
 			&copy; 2017 lyejoe.ch | <a href="#">Facebook</a> | <a href="#">Slack</a>
 		</div>
 	</footer>
 </body>
+
 </html>

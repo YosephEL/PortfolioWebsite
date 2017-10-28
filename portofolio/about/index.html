@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="../styles/style.css" rel="stylesheet" type="text/css">
 	<title>About | Lyejoe Portfolio</title>
 </head>
+
 <body>
 	<header>
-		<div class="mobmenu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
 		<div class="container">
-		<div class="lyelogo"><a href="index.html">
+			<div class="lyelogo"><a href="index.html">
 				<i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i></a></div>
-				<div class="search"><input class="inputclasses" id="search" name="seach" type="text" style ="border-radius: 8px"; style="border: 4px;"><i class="fa fa-search" aria-hidden="true"></i></div>
+			<div class="search"><input class="inputclasses" id="search" name="seach" type="text" style="border-radius: 8px" ; style="border: 4px;"><i class="fa fa-search" aria-hidden="true"></i></div>
 			<h2>Lyejoe Portfolio</h2>
 		</div>
+		<div class="mobmenu"><a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></div>
+
 	</header>
 	<nav>
 		<div class="container">
@@ -38,55 +41,44 @@
 		<div class="container">
 			<h1>Who is Leyjoe</h1>
 			<p>Contact Name : Yoseph E.L</p>
-			
-				<picture><source media="(min-width: 650px)" srcset="../images/smallsize.jpg"> <source media="(min-width: 465px)" srcset="../images/verysmallsize.jpg"> <img alt="Yoseph.E.L" src="../images/profile.JPG" style="width: 300px; height: 295px"></picture>
 
-							
+			<picture>
+				<source media="(min-width: 650px)" srcset="../images/smallsize.jpg">
+				<source media="(min-width: 465px)" srcset="../images/verysmallsize.jpg"> <img alt="Yoseph.E.L" src="../images/profile.JPG" style="width: 300px; height: 295px"></picture>
 
-			
+
+
+
 			<p>My name is Yoseph, I born in Addis Ababa a capital city of Ethiopia, I went to school very early like 5, but we, during my school we were 80-90 student in a class, It is not being more student, it is about having good teachers at school and we don’t have a good teacher. So the education system has totally failed. I realise that the public school does not have a very good salary for workers. And the teachers are not well educated. I personally wants to change the school system and education system, we can change with the combination of Information technology infrastructure. I strongly believe the high professional teachers who work at public school need to be paid more than any other private school teachers. I would like to establish this support through financial funders. Sometimes there is school or Infrastructure but no professionals round there, that is another challenge. I know other schools who have very good teachers but the equal number of students like ours, all students were riched in high level now. So Education changes the world. And Information technology will be a driving force for the Education and globalization follows. Education brings development.
 
-</p>
+			</p>
 
-	<ul id= "javalist">
-		<li>Nickname: <span id="nickname"></span></li>
-		<li>Favorites:  <span id="favorites"></span></li>
-		<li>Hometown: <span id="hometown"></span></li>
-  </ul>
-  
+			<ul id="javalist">
+				<li>Nickname: <span id="nickname"></span></li>
+				<li>Favorites: <span id="favorites"></span></li>
+				<li>Hometown: <span id="hometown"></span></li>
+			</ul>
+
 		</div>
 	</main>
 	<footer>
-	<script>
-		document.body.style.fontFamily = "Arial, sans-serif";
-		document.getElementById("nickname");
-		document.getElementById("nickname").innerHTML = "Full-name";
-		document.getElementById("favorites");
-		document.getElementById("favorites").innerHTML = "Favorite";
-		document.getElementById("hometown");
-		document.getElementById("hometown").innerHTML = "My City";
-		var items = document.getElementById("javalist").childNodes;
-		items[0].className = "list1";
-		items[1].className = "list1";
-		document.getElementById("vavalist").style.color = "red";
 
-		
-		
-		</script>
 		<script>
-		var navuldropdown = document.getElementsByClassName("navuldropdown")[0];
-		var mobmenu = document.getElementsByClassName("mobmenu")[0];
-		mobmenu.addEventListener('click', function(){
-			if(navuldropdown.classList.contains("displayNav") == false){
-			   navuldropdown.classList.add("displayNav");
-			   }else {
-			 navuldropdown.classList.remove("displayNav");
-			}
-		})
+			var navuldropdown = document.getElementsByClassName("navuldropdown")[0];
+			var mobmenu = document.getElementsByClassName("mobmenu")[0];
+			mobmenu.addEventListener('click', function() {
+				if (navuldropdown.classList.contains("displayNav") == false) {
+					navuldropdown.classList.add("displayNav");
+				} else {
+					navuldropdown.classList.remove("displayNav");
+				}
+			})
+
 		</script>
 		<div class="container">
 			&copy; 2017 lyejoe.ch | <a href="#">Facebook</a> | <a href="#">Slack</a>
 		</div>
 	</footer>
 </body>
+
 </html>

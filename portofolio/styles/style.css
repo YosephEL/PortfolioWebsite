@@ -115,7 +115,7 @@ li a {
 main{
 	margin: 0 auto;
 	background-color: whitesmoke;
-		border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
 
 }
 main .container{
@@ -132,6 +132,7 @@ mapframe {
 }
 
 a {
+	color: white;
 
 }
 a:visited {
@@ -150,7 +151,7 @@ a:visited {
    	box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.45);
 }
 micon a{
- color: black;
+ 	color: whitesmoke;
     text-decoration: none;
 }
 micon i{
@@ -166,8 +167,11 @@ micon i{
 .mobmenu{
 	text-align: left;
     padding: 20px 20px 0 0;
-    width: 18px;
-    float: right;
+    width: 20px;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+		
 	}
 .search{
 	display: none;
@@ -179,15 +183,13 @@ micon i{
 	}
 .lyelogo
 	{
-		
-position: absolute;
-left: 180px;
-top: -30px	
+display: none;
+
 	}
 	
 	.lyelogo img{
 		
-		width: 90px;
+
 	}
 	.boxcontainer{
 		margin: 0 auto;
@@ -327,7 +329,6 @@ nav a:active { color:#ff6600;}
 	}
 	.lyelogo
 	{
-		position: absolute;
 		left: 210px;
 		top: -30px	
 	}
