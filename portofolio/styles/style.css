@@ -150,11 +150,11 @@ a:visited {
 .micon:hover{	
    	box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.45);
 }
-micon a{
+.micon a{
  	color: whitesmoke;
     text-decoration: none;
 }
-micon i{
+.micon i{
     margin-bottom: 20px;
 }
 .profilepic {
@@ -194,13 +194,13 @@ display: none;
 	.boxcontainer{
 		margin: 0 auto;
   		padding:20px 20px 0;
-		border: 1px solid black;
+		#border: 1px solid green;
   		box-sizing:border-box;
   
 }
 	.box { 
   		box-sizing:border-box;
-		border: 1px solid black;
+		#border: 1px solid black;
 		
 
 }
@@ -208,7 +208,7 @@ display: none;
 		text-decoration: none;
 	}
 	.bild{
-  		border: 1px solid black;
+  		#border: 1px solid red;
  		padding: 2px;
   		margin: 3px 0 0;
 }
