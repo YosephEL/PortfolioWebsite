@@ -4205,7 +4205,9 @@ nav ul a span.badge {
     left: 100%;
   }
 }
-
+a.selected{
+	background-color: beige;
+}
 nav {
   color: #fff;
   background-color: #ee6e73;

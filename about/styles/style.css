@@ -1,0 +1,314 @@
+/* css  Oct. 03. 2017 by Yoseph Endrias by the help of Madam monoro, powercoders */
+
+@import url('https://fonts.googleapis.com/css?family=Nosifer|Roboto:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Nosifer|Roboto');
+@import url(../fonts/font-awesome/css/font-awesome.css);
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: gainsboro;
+	font-size: 1rem;
+	color: black;
+	font-size: 1rem;
+	margin: 0px;
+	font-weight: 400;
+	margin-top: 15px;
+    margin-bottom: 15px;
+   	margin-right: 15px;
+    margin-left: 15px;
+	
+}
+
+h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 700;
+	color: coral;
+}
+h2, h3 {
+	color: coral;
+	font-weight: 700;
+}
+p {
+	line-height: 170%;
+}
+hr.topline1 {
+	border-top: 3px double black;
+}
+header {
+	font-weight: 700;
+	border: 1px solid black;
+	border-radius: 25px 25px 0px 0px;
+	background-color: gray;
+	padding: 20px;
+
+}
+footer {
+	background-color: black;
+	font-family: cursive;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	border-radius: 0px 0px 5px 5px
+
+}
+nav {
+	
+	background-color: black;
+	padding: 20px;
+	border-radius: 0px 0px 25px 25px;
+
+}
+nav a:hover,
+nav a.selected{
+    background-color: cornflowerblue;
+	color: #fff;    
+}
+	nav a:hover:after,
+	nav a.selected:after{
+	position:absolute;
+	right: 20px;
+	top: 8px;
+
+}
+ul {
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.displayNav {
+	display: block;
+}
+
+.displayNav li  a {
+	background-color:skyblue;
+}
+
+li a {
+	display: block;
+	padding: 20px;
+	border-radius: 10px;
+	background-color:darkblue;
+	font-size: 18px;
+	border-right: 1px solid white;
+	text-decoration: none; 
+
+
+
+		
+}
+main{
+	margin: 0 auto;
+}
+main .container{
+		padding-bottom: 50px;
+	}
+mapframe {
+	width: 100%;
+}
+a {
+
+}
+a:visited {
+	color: white;
+}
+.micon {
+	border: 1px solid #000;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+	display: block;
+	width: 200px;
+}
+
+.profilepic {
+	float: left;
+	width: 150px;
+	height: auto;
+	padding: 20px;
+
+}
+.mobmenu{
+	text-align: left;
+    padding: 20px 20px 0 0;
+    width: 18px;
+    float: right;
+	}
+
+.container{
+	position: relative;
+
+}
+.lyelogo
+	{
+		position: absolute;
+		left: 210px;
+		top: -15px
+	}
+.lyelogo img{
+	width: 80px;
+}
+
+#meta {
+	background-color:ghostwhite;
+	margin: 0;
+	padding: 5px 50px;
+}
+#meta a,
+#meta a:visited{ 
+	color: #333333;
+	text-decoration: none; 
+}
+nav a:hover {color: #ff6677;}
+nav a:active { color:#ff6600;}
+
+.sub { 
+	float: right;
+	
+}
+
+
+
+#meta:after{
+	clear:right;
+  	content:" ";
+  	display: block;
+}	
+
+	
+
+/*--------  Media queries for min 600------*/
+
+@media screen and (min-width:600px) {
+
+	.container {
+		margin: 0 auto;
+		max-width: 900px;
+
+
+	
+	}
+	body {
+		font-size: 1.2rem;
+	}
+	/*--------  ------*/
+
+	li {
+		
+		display: inline-block;
+	}
+	ul {
+		margin: 0 auto;
+		display: inline-block;
+	}
+	nav {
+		margin: 0 auto;
+	}
+	.profilepic {
+		float: right;
+		width: 200px;
+		height: auto;
+
+	}
+	/*--------  ------*/
+
+	.mobmenu{
+		display: none;
+	}
+	.pror_container{
+
+		margin: 0 auto;
+	
+		
+	}
+	main{
+
+		margin: 0 auto;
+		padding: 30px;
+	}
+	main .container{
+		padding-bottom: 50px;
+	}
+	.aboutpics{
+		float: right;
+		width: auto;
+	}
+		
+	.micon {
+		display: block;
+	}
+	.micon a{
+		background-color: floralwhite;
+	}
+	.micon a:hover{
+		background-color: black;
+	
+}
+	/*--------  ------*/
+
+	
+	.lyelogo img{
+		
+		width: 120px;
+	}
+	.boxcontainer{
+		width: 900px;
+		margin: 0 auto 50px;
+  		padding:20px 20px 0;
+		border: 1px solid black;
+  		box-sizing:border-box;
+  
+}
+	.box { 
+  		box-sizing:border-box;
+		border: 1px solid black;
+		
+
+}
+	.box a{
+		text-decoration: none;
+	}
+	.bild img{
+  		border: 1px solid black;
+ 		padding: 2px;
+  		margin: 3px 0 0;
+}
+	.box h3{
+  margin: 0 0 10px;
+}
+	.box:after{
+		clear:left;
+  		content:" ";
+  		display: block;
+	}
+	.box p{
+  		margin: 0 0 20px 175px;
+ 		padding:0;
+  		line-height: 150%;
+}
+}
+/*--------  Media queries min 900 px------*/
+
+@media screen (min-width:900px){
+	
+	.container {
+		margin: 0 auto;
+	
+	}
+	.lyelogo img{
+		
+		width: 290px;
+	}
+
+
+}
+/*--------  Media queries max ------*/

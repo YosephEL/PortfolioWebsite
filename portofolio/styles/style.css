@@ -157,6 +157,13 @@ a:visited {
 .micon i{
     margin-bottom: 20px;
 }
+.picabout{
+	float: right;
+	width: 150px;
+	height: auto;
+	padding: 20px;
+	border: 1px solid black:
+}
 .profilepic {
 	float: left;
 	width: 150px;
@@ -310,10 +317,12 @@ nav a:active { color:#ff6600;}
 	}
 	main .container{
 	}
-	.aboutpics{
-		float: right;
-		width: auto;
-	}
+.picabout{
+	float: right;
+	width: 150px;
+	height: auto;
+	padding: 20px;
+	border: 1px solid black:
 		
 	.micon {
 		display: block;
